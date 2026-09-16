@@ -935,7 +935,3 @@ summary.catalog-btn {
 .sidemenu a.is-active {
   color: #f17023;
 }
-
-.card__img--photo {
-  mix-blend-mode: normal;
-}
