@@ -926,6 +926,7 @@ button {
 /* Catalog dropdown */
 .catalog-dropdown {
   position: relative;
+  z-index: 30;
   flex-shrink: 0;
 }
 
