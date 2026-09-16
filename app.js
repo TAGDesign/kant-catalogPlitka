@@ -1,4 +1,3 @@
-const geo = document.getElementById("geoConfirm");
 const scrollTop = document.getElementById("scrollTop");
 const searchHint = document.getElementById("searchHint");
 const hints = ["куртка", "сноуборд", "ботинки", "шлем", "Поиск по сайту"];
@@ -10,10 +9,6 @@ if (searchHint) {
     searchHint.textContent = hints[hintIndex];
   }, 2200);
 }
-
-document.getElementById("geoYes")?.addEventListener("click", () => {
-  geo?.remove();
-});
 
 window.addEventListener("scroll", () => {
   scrollTop?.classList.toggle("is-visible", window.scrollY > 400);
