@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Снаряжение для бега — купить в интернет-магазине КАНТ</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <header class="header">
@@ -70,16 +70,16 @@
         </a>
 
         <div class="search-wrap">
-          <div class="catalog-dropdown" id="catalogDropdown">
-            <button class="catalog-btn" type="button" id="catalogBtn" aria-haspopup="true" aria-expanded="false" aria-controls="catalogMenu">
+          <details class="catalog-dropdown" id="catalogDropdown">
+            <summary class="catalog-btn" id="catalogBtn">
               <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
               Каталог
-            </button>
+            </summary>
             <ul class="catalog-menu" id="catalogMenu" role="menu">
               <li><a class="catalog-menu__link" href="index.html">Снаряжение для сноуборда</a></li>
               <li><a class="catalog-menu__link is-active" href="running.html">Снаряжение для бега</a></li>
             </ul>
-          </div>
+          </details>
           <div class="search">
             <form class="search__form" action="#" role="search">
               <input class="search__input" type="text" placeholder=" " autocomplete="off">
@@ -384,6 +384,6 @@
     </svg>
   </button>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

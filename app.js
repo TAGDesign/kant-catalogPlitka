@@ -24,25 +24,16 @@ scrollTop?.addEventListener("click", () => {
 });
 
 const catalogDropdown = document.getElementById("catalogDropdown");
-const catalogBtn = document.getElementById("catalogBtn");
-
-catalogBtn?.addEventListener("click", (e) => {
-  e.stopPropagation();
-  const open = catalogDropdown.classList.toggle("is-open");
-  catalogBtn.setAttribute("aria-expanded", String(open));
-});
 
 document.addEventListener("click", (e) => {
-  if (catalogDropdown && !catalogDropdown.contains(e.target)) {
-    catalogDropdown.classList.remove("is-open");
-    catalogBtn?.setAttribute("aria-expanded", "false");
+  if (catalogDropdown?.open && !catalogDropdown.contains(e.target)) {
+    catalogDropdown.open = false;
   }
 });
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && catalogDropdown?.classList.contains("is-open")) {
-    catalogDropdown.classList.remove("is-open");
-    catalogBtn?.setAttribute("aria-expanded", "false");
-    catalogBtn?.focus();
+  if (e.key === "Escape" && catalogDropdown?.open) {
+    catalogDropdown.open = false;
+    catalogDropdown.querySelector("summary")?.focus();
   }
 });

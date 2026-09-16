@@ -929,8 +929,18 @@ button {
   flex-shrink: 0;
 }
 
-.catalog-btn[aria-expanded="true"] {
+.catalog-dropdown[open] .catalog-btn {
   background: #d95f17;
+}
+
+.catalog-btn::-webkit-details-marker {
+  display: none;
+}
+
+summary.catalog-btn {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 .catalog-menu {
@@ -948,7 +958,7 @@ button {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-.catalog-dropdown.is-open .catalog-menu {
+.catalog-dropdown[open] .catalog-menu {
   display: block;
 }
 
