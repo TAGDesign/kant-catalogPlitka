@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сноуборды — купить сноуборд, цены в интернет-магазине КАНТ</title>
+  <title>Горнолыжное снаряжение — купить в интернет-магазине КАНТ</title>
   <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
@@ -69,9 +69,9 @@
               Каталог
             </summary>
             <ul class="catalog-menu" id="catalogMenu" role="menu">
-              <li><a class="catalog-menu__link is-active" href="index.html">Снаряжение для сноуборда</a></li>
+              <li><a class="catalog-menu__link" href="index.html">Снаряжение для сноуборда</a></li>
               <li><a class="catalog-menu__link" href="running.html">Снаряжение для бега</a></li>
-              <li><a class="catalog-menu__link" href="skiing.html">Горнолыжное снаряжение</a></li>
+              <li><a class="catalog-menu__link is-active" href="skiing.html">Горнолыжное снаряжение</a></li>
             </ul>
           </details>
           <div class="search">
@@ -125,10 +125,10 @@
         <li><a href="#">Одежда</a></li>
         <li><a href="#">Обувь</a></li>
         <li><a href="#">Туризм и кемпинг</a></li>
-        <li><a href="#">Бег</a></li>
+        <li><a href="running.html">Бег</a></li>
         <li><a href="#">Велосипеды и аксессуары</a></li>
         <li><a href="#">Сноуборды</a></li>
-        <li><a href="#">Горные лыжи</a></li>
+        <li><a class="is-current" href="skiing.html">Горные лыжи</a></li>
         <li><a class="is-sale" href="#">Распродажа</a></li>
         <li><a href="#">Премиум</a></li>
         <li><a class="is-promo" href="#">Акции</a></li>
@@ -154,20 +154,22 @@
 
     <div class="container">
       <div class="heading">
-        <h1>Снаряжение для сноуборда</h1>
+        <h1>Горнолыжное снаряжение</h1>
       </div>
 
       <div class="columns">
         <aside class="sidemenu">
-          <a href="#">Сноуборды</a>
-          <a href="#">Ботинки для сноуборда</a>
-          <a href="#">Крепления</a>
+          <a class="is-active" href="#">Горные лыжи</a>
+          <a href="#">Горнолыжные ботинки</a>
+          <a class="sidemenu__spoiler" href="#">Горнолыжные крепления и ски-стопы</a>
+          <a href="#">Горнолыжные палки</a>
           <hr class="sidemenu__hr">
+          <a href="#">Комплекты горных лыж</a>
           <a class="sidemenu__spoiler" href="#">Маски</a>
           <a class="sidemenu__spoiler" href="#">Шлемы</a>
           <a href="#">Защита</a>
           <a href="#">Рюкзаки</a>
-          <a href="#">Чехлы для сноуборда</a>
+          <a href="#">Чехлы для горных лыж</a>
           <a href="#">Сумки для ботинок</a>
           <a class="sidemenu__spoiler" href="#">Лавинное снаряжение</a>
           <a class="sidemenu__spoiler" href="#">Аксессуары и запчасти</a>
@@ -176,34 +178,50 @@
 
         <div class="main">
           <div class="cards">
-            <a class="card card--snowboards" href="#">
+            <a class="card card--skis" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/snowboard-illust.png?v=2" alt="Сноуборды">
+                  <img class="card__img" src="images/skiing/skis.webp" alt="Горные лыжи">
                 </div>
-                <span class="card__title">Сноуборды</span>
+                <span class="card__title">Горные лыжи</span>
               </div>
             </a>
             <a class="card card--boots" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/boots-illust.png?v=2" alt="Ботинки для сноуборда">
+                  <img class="card__img" src="images/skiing/boots.webp" alt="Горнолыжные ботинки">
                 </div>
-                <span class="card__title">Ботинки для сноуборда</span>
+                <span class="card__title">Горнолыжные ботинки</span>
               </div>
             </a>
             <a class="card card--bindings" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/bindings-illust.png" alt="Крепления">
+                  <img class="card__img" src="images/skiing/bindings.webp" alt="Горнолыжные крепления и ски-стопы">
                 </div>
-                <span class="card__title">Крепления</span>
+                <span class="card__title">Горнолыжные крепления и ски-стопы</span>
+              </div>
+            </a>
+            <a class="card card--poles" href="#">
+              <div class="card__media">
+                <div class="card__figure">
+                  <img class="card__img" src="images/skiing/poles.webp" alt="Горнолыжные палки">
+                </div>
+                <span class="card__title">Горнолыжные палки</span>
+              </div>
+            </a>
+            <a class="card card--sets" href="#">
+              <div class="card__media">
+                <div class="card__figure">
+                  <img class="card__img" src="images/skiing/sets.webp" alt="Комплекты горных лыж">
+                </div>
+                <span class="card__title">Комплекты горных лыж</span>
               </div>
             </a>
             <a class="card card--masks" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/masks-illust.png" alt="Маски">
+                  <img class="card__img" src="images/skiing/masks.webp" alt="Маски">
                 </div>
                 <span class="card__title">Маски</span>
               </div>
@@ -211,7 +229,7 @@
             <a class="card card--helmets" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/helmet-illust.png" alt="Шлемы">
+                  <img class="card__img" src="images/skiing/helmets.webp" alt="Шлемы">
                 </div>
                 <span class="card__title">Шлемы</span>
               </div>
@@ -219,7 +237,7 @@
             <a class="card card--protection" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/protection-illust.png" alt="Защита">
+                  <img class="card__img" src="images/skiing/protection.webp" alt="Защита">
                 </div>
                 <span class="card__title">Защита</span>
               </div>
@@ -227,7 +245,7 @@
             <a class="card card--backpacks" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/backpack-illust.png" alt="Рюкзаки">
+                  <img class="card__img" src="images/skiing/backpacks.webp" alt="Рюкзаки">
                 </div>
                 <span class="card__title">Рюкзаки</span>
               </div>
@@ -235,15 +253,15 @@
             <a class="card card--covers" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/covers-photo.jpg" alt="Чехлы для сноуборда">
+                  <img class="card__img" src="images/skiing/covers.webp" alt="Чехлы для горных лыж">
                 </div>
-                <span class="card__title">Чехлы для сноуборда</span>
+                <span class="card__title">Чехлы для горных лыж</span>
               </div>
             </a>
             <a class="card card--bags" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/bags-illust.png" alt="Сумки для ботинок">
+                  <img class="card__img" src="images/skiing/bags.webp" alt="Сумки для ботинок">
                 </div>
                 <span class="card__title">Сумки для ботинок</span>
               </div>
@@ -251,7 +269,7 @@
             <a class="card card--avalanche" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/avalanche-illust.png" alt="Лавинное снаряжение">
+                  <img class="card__img" src="images/skiing/avalanche.webp" alt="Лавинное снаряжение">
                 </div>
                 <span class="card__title">Лавинное снаряжение</span>
               </div>
@@ -259,7 +277,7 @@
             <a class="card card--accessories" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/accessories-illust.png" alt="Аксессуары и запчасти">
+                  <img class="card__img" src="images/skiing/accessories.webp" alt="Аксессуары и запчасти">
                 </div>
                 <span class="card__title">Аксессуары и запчасти</span>
               </div>
@@ -267,7 +285,7 @@
             <a class="card card--tools" href="#">
               <div class="card__media">
                 <div class="card__figure">
-                  <img class="card__img" src="images/tools-illust.png?v=4" alt="Инструменты и уход">
+                  <img class="card__img" src="images/skiing/tools.webp" alt="Инструменты и уход">
                 </div>
                 <span class="card__title">Инструменты и уход</span>
               </div>
@@ -275,9 +293,9 @@
           </div>
 
           <div class="description">
-            <p>Интернет-магазин Kant.ru предлагает купить Сноуборды с доставкой по Москве и другим городам России.</p>
-            <p>В наших магазинах вас ждет большой выбор Сноубордов из качественных материалов от мировых брендов с приятными скидками и бонусами при покупке.</p>
-            <p>Наши эксперты и консультанты всегда готовы помочь подобрать удобный комплект экипировки и аксессуары для катания на сноуборде, чтобы оно стало безопаснее и удобнее.</p>
+            <p>Интернет-магазин Kant.ru предлагает купить горнолыжное снаряжение с доставкой по Москве и другим городам России.</p>
+            <p>В каталоге собраны горные лыжи, ботинки, крепления, палки, шлемы, маски и аксессуары от мировых брендов со скидками и бонусами при покупке.</p>
+            <p>Наши эксперты помогут подобрать комплект под ваш уровень катания и стиль: от первых спусков до фрирайда.</p>
           </div>
         </div>
       </div>
